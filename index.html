@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bemutató oldal</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0 maximum-scalable=1.0 user-scalable=no">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("article").hide();
+                $("#a1").show();
+                $("a").click(function(){
+                    var nav =$(this).index();
+                    $("a").removeClass("active");
+                    $(this).addClass("active");
+                    $("article").hide();
+                    if(nav == 0){
+                        $("#a1").show();
+                    }
+                    else if(nav == 1){
+                        $("#a2").show();
+                    }
+                    else if(nav == 2){
+                    $("#a3").show();
+                    }
+                }
+    
+                );
+            }
+    
+            );
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                Maglódi Gábor
+            </header>
+            <nav>
+                <div class="pagination">
+                    <a class="active" href="#" >Iskolám</a>
+                    <a href="#" >Hobbim</a>
+                    <a href="#" >Település</a>   
+                </div>
+            </nav>
+            <section>
+                <article id="a1">
+                    <h1>Az iskolám</h1>
+                    <figure>
+                        <img src="images/img4.jpg" alt=""/>
+                        <figcaption>
+                            Itt egy kép róla.
+                        </figcaption>
+                    </figure>
+                    <p>
+                        Én a SSzC Szondi György Szakközépiskola és Szakgimnáziumába járok Balassagyarmaton. Itt műszaki informatikát tanulok két éve. Szeretek ide járni, sokat tanultam eddig. Sok motivációt kapunk a szaktanárunktól, hogy sokra vihessük.
+                    </p>
+                </article>
+                <article id="a2">
+                    <h1>Hobbim</h1>
+                    <figure>
+                        <img src="images/img2.jpg" alt=""/>
+                        <figcaption>
+                            Repülő macska-golyók.
+                        </figcaption>
+                    </figure>
+                    <p>
+                      Hobbiként azt szoktam csinálni, hogy elmegyek a bátyámmal túrázni, aki hobbifotós. Ezek a túrák általában hosszabbak, mint egy óra.  
+                    </p>
+                    <p>
+                        <!---Néha-néha szoktam barkácsolni is. Általában fából, de néha fémből. A kovácsolást érdekesnek tartom, gyakran nézek róla videókat.--> 
+                    </p>
+                    <p>
+                        A legtöbb időmet csak simán internetrezéssel, játékkal, tévézéssel és evéssel töltöm.
+                    </p>
+                </article>
+                <article id="a3">
+                    <h1>Település</h1>
+                    <figure>
+                        <img src="images/falu.jpg" alt=""/>
+                        <figcaption>
+                            A falum központja.
+                        </figcaption>
+                    </figure>
+                    <p>
+                        Ipolyszögön lakom. Ez egy kis falu Balassagyarmattól kb. 6 kilométerre. Kis falu, nagyjából 600-an laknak itt. A falu központjában a templom áll (amit a kép mutat). Én a falú túlsó vége felé lakom, egy újépítésű házban.
+                    </p>
+                </article>
+            </section>
+            <aside>
+                <h1>Rólam</h1>
+                <img src="images/en2.jpg" alt="szondi">
+                Jelenleg 16 éves vagyok, informatikát tanulok. Nagycsaládban élek, 3 bátyám van. Mindegyikünk másmilyen. Én sokmindent szeretnék csinálni, de nem csinálom. Okosnak tartom magam, ezt igyekszem is kihasználni. Szeretnék minél tovább tanulni.
+            </aside>
+            <div class="clear"></div>
+            <footer>
+                <a href="#" >Iskolám</a>
+                <a href="#" >Hobbim</a>
+                <a href="#" >Település</a>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body {
+    background: url('bg.png') #f6feff;
+    font-family: arial;
+    font-size: 100%;
+    color: #000000;
+}
+a{
+    color: #000000e0;
+}
+div.clear {
+    clear:both;
+}
+div#wrapper {
+    width: 800px;
+    margin: 20px auto;
+}
+header {
+    text-align: center;
+    font-size: 360%;
+    font-weight: bold;
+    font-family: "Times New Roman";
+    text-shadow:  1px 1px 1px #0c101d;
+    color: #263f92;
+}
+nav{
+    padding: 10px 0;
+    margin: 20px 0;
+    color: #000;
+    box-shadow: 0px 0px 5px #1f1f29;
+    background: #263f92;
+}
+nav a {
+    color: rgb(255, 255, 255);
+    margin: 0 10px;
+    font-size: 120%;
+    text-decoration: double;
+    font-family: Arial;
+}
+nav a:first-child {margin-left: 20px;}
+nav a:hoover {text-decoration: dashed;}
+.pagination{
+    display: inline-block;
+}
+.pagination a{
+    color: white;
+    float: left;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 3px 5px 3px 5px;
+
+}
+.pagination a.active{
+    background-color: #212f5ce5;
+    color: white;
+}
+section{
+    width:  550px;
+    float: left;
+    margin: 5px;
+    padding: 5px;
+    border-right: 4px double #19102e;
+    border-left: 4px double #19102e;
+
+}
+aside {
+    width: 150px;
+    float: left;
+    font-size: 100%;
+    font-family: Arial;
+    text-shadow: 1px;
+}
+aside h1{
+    font-size:  150%;
+    color: #000000;
+   
+}
+aside img{
+    width: 100%;
+}
+section article {
+    margin: 10px;
+
+}
+section article h1 {
+    margin: 0 0 10px 0;
+    font-size:  150%;
+    color: #000000;
+    text-shadow: 1px 1px 1px #030307;
+    font-family: Arial;
+}
+section article p {
+    text-align: justify;
+    line-height: 100%;
+    font-size: 110%;
+}
+figure {
+    padding: 2px;
+    background: #263f924b;
+    margin: 0 0 2px 0;
+
+}
+figure img {
+    max-width: 100%;
+    min-width: 100%;
+}
+figure figcaption {
+    font-family: "Franklin Gothic Medium";
+    font-style: italic;
+    font-size: 110%;
+    margin: 6px 0 0 0;
+}
+footer {
+    width: auto;
+    margin: 20px ;
+    padding: 20px;
+    background: #263f927c;
+    text-align: center;
+    
+}
+footer a {
+    margin: 0 20px;
+    color: white;
+}
+@media only screen
+and (min-width:480px)
+and (max-width:720px)
+{
+    div#wrapper{width: 482px}
+    header{font-size: 200%}
+    section{width: 360px; padding: 0px; margin: 0px;}
+    aside{width: 110px; font-size: 80%; padding: 0px; margin: 2px;}
+    footer{width: 500px}
+}
+@media only screen
+and (min-width:360px)
+and (max-width:480px)
+{
+    div#wrapper{width: 480px}
+    header{font-size: 200%}
+    section{width: 360px; border: 0;margin: 0;padding: 0}
+    aside{display: none}
+    footer{width: 360px; border: 5px;margin: 0;padding: 5px}
+}
+@media only screen
+and (min-width:240px)
+and (max-width:360px)
+{
+    div#wrapper{width: 360px}
+    header{font-size: 100%;text-align: center}
+    header span{display: block} 
+    section{width: 300px; border: 0;margin: 0;padding: 0}
+    aside{display: none}
+    footer{display: none}
+}
